@@ -272,6 +272,18 @@ h2{ margin: 0 0 10px; font-size: 28px; letter-spacing: -.3px; }
 }
 .right{ text-align:right; }
 
+.logo-img{
+  height: 44px;
+  width: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+@media (max-width: 940px){
+  .logo-img{ height: 38px; }
+}
+
+
 @media (max-width: 940px){
   .hero-grid{ grid-template-columns: 1fr; }
   .grid3{ grid-template-columns: 1fr; }
