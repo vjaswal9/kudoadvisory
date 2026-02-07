@@ -273,10 +273,11 @@ h2{ margin: 0 0 10px; font-size: 28px; letter-spacing: -.3px; }
 .right{ text-align:right; }
 
 .logo-img{
-  height: 44px;
+  height: 64px;           /* increase this: 56 / 64 / 72 */
   width: auto;
   display: block;
   border-radius: 12px;
+  flex-shrink: 0;
 }
 
 @media (max-width: 940px){
