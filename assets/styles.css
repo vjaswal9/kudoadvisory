@@ -273,7 +273,7 @@ h2{ margin: 0 0 10px; font-size: 28px; letter-spacing: -.3px; }
 .right{ text-align:right; }
 
 .logo-img{
-  height: 64px;           /* increase this: 56 / 64 / 72 */
+  height: clamp(44px, 5vw, 72px);
   width: auto;
   display: block;
   border-radius: 12px;
