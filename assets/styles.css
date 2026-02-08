@@ -54,8 +54,7 @@ a:hover{ opacity:.9; }
 .brand{
   display:flex;
   align-items:center;
-  gap: 16px;
-  min-width: 420px;
+  gap: 14px;
 }
 
 .brand-link{ display:flex; align-items:center; }
@@ -73,10 +72,38 @@ a:hover{ opacity:.9; }
 }
 .brand-name{ font-weight: 800; letter-spacing:.2px; }
 .brand-tag{
+  margin-top: 4px;
   font-size: 14px;
   color: var(--muted);
-  line-height: 1.2;
   white-space: nowrap;
+  line-height: 1.2;
+}
+
+.brand-link{ display:flex; align-items:center; }
+
+.logo-icon{
+  height: 64px;      /* try 64 -> 72 if you want bigger */
+  width: auto;
+  display:block;
+  flex-shrink: 0;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.35));
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height: 1.1;
+}
+
+.brand-name{
+  font-weight: 800;
+  letter-spacing: .2px;
+  font-size: 20px;
+}
+
+.brand-name span{
+  font-weight: 600;
+  color: rgba(255,255,255,.85);
 }
 
 .menu{ display:flex; gap:18px; align-items:center; }
@@ -297,6 +324,10 @@ h2{ margin: 0 0 10px; font-size: 28px; letter-spacing: -.3px; }
   .brand{ min-width: auto; }
   .logo-img{ height: 64px; }
   .brand-tag{ white-space: normal; }
+    .logo-icon{ height: 56px; }
+  .brand-name{ font-size: 18px; }
+  .brand-tag{ white-space: normal; }
+
 }
 
 @media (max-width: 940px){
