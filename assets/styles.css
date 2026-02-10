@@ -68,21 +68,21 @@ a:hover{ opacity: .95; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
-  gap: 14px;
+  padding: 18px 0;   /* more breathing room */
+  gap: 18px;
 }
 
 .brand{
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  min-width: 260px;
+  display:flex;
+  align-items:center;
+  gap: 0;
+  min-width: 0;
 }
 
 .brand-logo{
+  height: 56px;      /* try 56 → 64 if you want even bolder */
   width: auto;
-  height: 44px;
-  filter: drop-shadow(0 10px 24px rgba(0,0,0,.45));
+  filter: drop-shadow(0 12px 28px rgba(0,0,0,.45));
 }
 
 .brand-tag{
@@ -95,7 +95,14 @@ a:hover{ opacity: .95; }
 /* Desktop nav */
 .nav{ display: flex; align-items: center; gap: 12px; }
 .nav-links{ display: flex; align-items: center; gap: 18px; }
-.nav-links a{ color: var(--muted); font-size: 14px; }
+.nav-links a:not(.btn){
+  color: var(--muted);
+  font-size: 14px;
+}
+.nav-links a:not(.btn):hover{
+  color: var(--text);
+  opacity: 1;
+}
 .nav-links a:hover{ color: var(--text); opacity: 1; }
 
 .btn{
@@ -118,9 +125,12 @@ a:hover{ opacity: .95; }
   background: var(--cream);
   color: var(--navy);
   border-color: rgba(255,255,220,.25);
-  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  box-shadow: 0 18px 40px rgba(0,0,0,.28);
 }
-.btn-primary:hover{ background: rgba(255,255,220,.94); opacity: 1; }
+.btn-primary:hover{
+  background: rgba(255,255,220,.94);
+  opacity: 1;
+}
 
 .btn-ghost{
   background: rgba(255,255,220,.06);
